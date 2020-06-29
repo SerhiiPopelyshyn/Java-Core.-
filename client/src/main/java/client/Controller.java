@@ -44,6 +44,8 @@ public class Controller implements Initializable {
 
     Stage regStage;
 
+
+
     Socket socket;
     DataInputStream in;
     DataOutputStream out;
@@ -150,7 +152,7 @@ public class Controller implements Initializable {
                             textArea.appendText(str + "\n");
                         }
                     }
-                }catch (RuntimeException e){
+                } catch (RuntimeException e) {
                     System.out.println("re");
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -232,8 +234,8 @@ public class Controller implements Initializable {
         regStage.show();
     }
 
-    public void tryRegistration(String login, String password ,String nickname){
-        String msg = String.format("/reg %s %s %s", login, password ,nickname);
+    public void tryRegistration(String login, String password, String nickname) {
+        String msg = String.format("/reg %s %s %s", login, password, nickname);
 
         if (socket == null || socket.isClosed()) {
             connect();

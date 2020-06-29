@@ -12,6 +12,8 @@
     <artifactId>client</artifactId>
 
 
+
+
     <build>
         <finalName>ChatClient</finalName>
         <plugins>
