@@ -5,6 +5,8 @@ import java.util.List;
 
 public class SimpleAuthService implements AuthService {
 
+
+
     private class UserData{
         String login;
         String password;

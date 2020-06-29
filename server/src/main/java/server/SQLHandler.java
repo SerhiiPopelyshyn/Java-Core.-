@@ -2,6 +2,8 @@ package server;
 
 import java.sql.*;
 
+
+
 public class SQLHandler {
     private static Connection connection;
     private static PreparedStatement psGetNickname;
